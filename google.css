@@ -1,0 +1,7 @@
+body{
+    background-color: white;
+}
+a{
+    text-decoration: black;
+}
+.logo{ display: inline block; position: relative; }
