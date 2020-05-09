@@ -1,14 +1,27 @@
 body{
     background-color: white;
 }
-.rightnav{
-display: inline-flexbox; 
-align-items: center; 
+.navbar{
+  display: flex; 
+  flex-direction: row;
+  padding-top: 10px;
+} */
+.rnav{
+    margin-right: 15px;
 }
-.leftnav{ display: inline-block; align-items:  center; padding: 5px ;}
-a{color:  black; padding-right: 15px;}
- 
-.logo{ display: inline block; position: relative; margin-top: 47px; height: 233px; }
+a{color:  black;}
+.dot-icon{width: 18px; height: 18px;}
+img{
+    display: block;
+    margin: auto;
+    padding-top: 150px; 
+    padding-bottom: 20px; 
+    }
+#logo{ display: inline block; 
+    position: relative; 
+    margin: auto; 
+    padding-top: 150px;
+ }
 #signinbutton{
     background-color:rgb(66,133,244); 
     color:white; border-radius: 2px; 
@@ -16,11 +29,37 @@ a{color:  black; padding-right: 15px;}
     position: relative;
     bottom: 5px;
     padding:5px 10px; }
-    .dot-icon{width: 18px; height: 18px;}
-#main{ position: relative; display: inline-block; height: 220px; width: 550px; }
+ 
+ #main{
+     position: relative; 
+    display:inline-flexbox; 
+    flex-direction: columnm; 
+    justify-content: center;  
+    height: 50%; 
+    width: 50%;
+    margin:0 auto; }
+
+.searchClass{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 45px;
+    width: 30vw;
+    border-radius: 20px;
+    border: 1px solid #e0e0e0; 
+
+}
+.bi bi-search{ height:15px; margin-top: 5px; padding: 10px; }
+.searchBar{
+    display: block;
+    margin: auto;
+    width: 25vw;
+    height: 95%;
+    border: none;
+}
+.bi bi-mic-fill{ height: 20px; margin-top: 2px; padding: 10px; margin-right:5px;}
 .buttons{
-    background-color: #f2f2f2;
-border: 1px solid #f2f2f2;
+
 border-radius: 4px;
 color: #5F6368;
 font-family: arial,sans-serif;
@@ -32,11 +71,30 @@ height: 36px;
 min-width: 54px;
 text-align: center;
 }
+.touchbuttons{
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368 ;
+}
 .footer{
-    background: #f2f2f2; line-height: 40px;min-width: 980px;
+    background: #f2f2f2; 
+    position: absolute;
+    left:0px; 
+    bottom:0px;
+    width: 100vw;
+    padding-top: 3px; 
+    border-top: 1px solid #e0e0e0;
+    display: flex; 
+    flex-direction: row;
+    margin-left:0px;
+    justify-content: space-between;
+    line-height: 40px;
 
 }
 .leftfooter{
+    display: flex;
+    flex-direction: row;
     border-top: 1px solid #e4e4e4;
     display: inline-block; 
     color: black; 
@@ -46,3 +104,8 @@ text-align: center;
     color:rgb(34,34,34)
 
 }
+.righfooter{
+
+display: flex;
+flex-direction: row;
+} 
